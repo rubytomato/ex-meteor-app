@@ -1,0 +1,39 @@
+<template name="listsShow">
+  <div class="page-header">
+    <h1>Actor List</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+    {{#if actors}}
+      <div class="panel panel-default">
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">
+          <p>name...{{sortName}}</p>
+          <p>type...{{orderType}}</p>
+        </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>名前</th>
+              <th>身長</th>
+              <th>血液型</th>
+              <th>誕生日</th>
+              <th>出生地</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+          {{#each actors}}
+            {{> actor}}
+          {{/each}}
+          </tbody>
+        </table>
+      </div>
+    {{else}}
+      <h2>No Actor here</h2>
+    {{/if}}
+    </div>
+  </div>
+
+</template>

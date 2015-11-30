@@ -1,0 +1,18 @@
+<template name="actor">
+    <tr>
+      <td>
+        <a href="/detail/{{_id}}">{{_id}}</a>
+        &nbsp;
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        &nbsp;
+        <span>
+          {{name}}
+        </span>
+      </td>
+      <td>{{height}}</td>
+      <td>{{blood}}</td>
+      <td>{{formatDate birthday}}</td>
+      <td>{{birthplace}}</td>
+      <td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+    </tr>
+</template>
